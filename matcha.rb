@@ -5,20 +5,20 @@
 class Matcha < Formula
   desc "A beautiful and functional email client for your terminal."
   homepage "https://matcha.floatpane.com"
-  version "0.16.2"
+  version "0.17.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/floatpane/matcha/releases/download/v0.16.2/matcha_0.16.2_darwin_amd64.tar.gz"
-      sha256 "be38518f3853a130f9ac40ae34109ea487b2cda899ad8495752a96bf8a3ec877"
+      url "https://github.com/floatpane/matcha/releases/download/v0.17.0/matcha_0.17.0_darwin_amd64.tar.gz"
+      sha256 "3e69de524fa25987bd77d6968cc8a3bf0dbbbbce28907b023340e33d2d46aed8"
 
       def install
         bin.install "matcha"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/floatpane/matcha/releases/download/v0.16.2/matcha_0.16.2_darwin_arm64.tar.gz"
-      sha256 "9c3b5f6ad313970d59322514ab1b96c7c07bba46a5e6aae328a45ca75639b990"
+      url "https://github.com/floatpane/matcha/releases/download/v0.17.0/matcha_0.17.0_darwin_arm64.tar.gz"
+      sha256 "09fd29a110341e601ee03639653990e2eebe9ec26edd4ff59b94857515ae0e91"
 
       def install
         bin.install "matcha"
@@ -28,15 +28,15 @@ class Matcha < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/floatpane/matcha/releases/download/v0.16.2/matcha_0.16.2_linux_amd64.tar.gz"
-      sha256 "a6285a4ad3cf0e18ec86cff8871bcd20686324471dd80943b3636af169dab253"
+      url "https://github.com/floatpane/matcha/releases/download/v0.17.0/matcha_0.17.0_linux_amd64.tar.gz"
+      sha256 "3883c2a41df0adb845e00f7547b98666cc4bbb1b17f9ba71f3120c7056c4dfc9"
       def install
         bin.install "matcha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/floatpane/matcha/releases/download/v0.16.2/matcha_0.16.2_linux_arm64.tar.gz"
-      sha256 "ff51bf1ce35f6ed03f2169a80588aefaca6444bc76d74128830f7b558ab8924d"
+      url "https://github.com/floatpane/matcha/releases/download/v0.17.0/matcha_0.17.0_linux_arm64.tar.gz"
+      sha256 "488838e185190b9fc34aa94c9cf293eb94a3e4e0c2400cdc08de46ab2bec404c"
       def install
         bin.install "matcha"
       end
