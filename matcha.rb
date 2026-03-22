@@ -5,20 +5,20 @@
 class Matcha < Formula
   desc "A beautiful and functional email client for your terminal."
   homepage "https://matcha.floatpane.com"
-  version "0.27.0"
+  version "0.27.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/floatpane/matcha/releases/download/v0.27.0/matcha_0.27.0_darwin_amd64.tar.gz"
-      sha256 "ad53e81a2c06d01fac31d544abf5f8e32122de3880c14430aaa665da4b73ba62"
+      url "https://github.com/floatpane/matcha/releases/download/v0.27.1/matcha_0.27.1_darwin_amd64.tar.gz"
+      sha256 "a8a6488e67082c9fb1fa76741a9954d68cce19c2c5e40476da19f708d34e3d08"
 
       define_method(:install) do
         bin.install "matcha"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/floatpane/matcha/releases/download/v0.27.0/matcha_0.27.0_darwin_arm64.tar.gz"
-      sha256 "69d9c3ac0fd6560ca232c30e18086e255e101ea6d892781eb36844d4022ed98f"
+      url "https://github.com/floatpane/matcha/releases/download/v0.27.1/matcha_0.27.1_darwin_arm64.tar.gz"
+      sha256 "ffb3cd7ea2d0b820ae84707e2f13b85e0e3dd373e8063259ac71efd81fc0d840"
 
       define_method(:install) do
         bin.install "matcha"
@@ -28,15 +28,15 @@ class Matcha < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/floatpane/matcha/releases/download/v0.27.0/matcha_0.27.0_linux_amd64.tar.gz"
-      sha256 "4eb19f303ac8ca1bc207544ba35073bb722be930fd4c81955bcc716d3dc084b8"
+      url "https://github.com/floatpane/matcha/releases/download/v0.27.1/matcha_0.27.1_linux_amd64.tar.gz"
+      sha256 "86be653fd270632156b8b54b28e2bfcd3e6e73172927b04a4f83b56ffd45ba73"
       define_method(:install) do
         bin.install "matcha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/floatpane/matcha/releases/download/v0.27.0/matcha_0.27.0_linux_arm64.tar.gz"
-      sha256 "7199c4496e34891c074fac60d2facf01c2bfa995cc200e7c8f5b833243c5ed22"
+      url "https://github.com/floatpane/matcha/releases/download/v0.27.1/matcha_0.27.1_linux_arm64.tar.gz"
+      sha256 "fd21faf004b51f02bee9b0b4d7457719932bab40de3dcc060b6e264d305caea7"
       define_method(:install) do
         bin.install "matcha"
       end
