@@ -10,7 +10,7 @@ class Matcha < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/floatpane/matcha/releases/download/v0.35.0/matcha_0.35.0_darwin_amd64.tar.gz"
-      sha256 "5817d7d42376ac3559881000b7b382afb95638f5a9bfbc74ceb659e2e2e7f796"
+      sha256 "571d334087f54735cabf5cd009d6ce367e3f71815b005345f846fab69b1b663c"
 
       define_method(:install) do
         bin.install "matcha"
@@ -18,7 +18,7 @@ class Matcha < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/floatpane/matcha/releases/download/v0.35.0/matcha_0.35.0_darwin_arm64.tar.gz"
-      sha256 "4e0640561dc9ecc1ace124e3a545c320528ace8c6c89a89219716dad607661f0"
+      sha256 "3d41e542064e9fa19d54cd1121abea40ebe48e3efd30fa1637e5a39c3316b3e8"
 
       define_method(:install) do
         bin.install "matcha"
@@ -29,14 +29,14 @@ class Matcha < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/floatpane/matcha/releases/download/v0.35.0/matcha_0.35.0_linux_amd64.tar.gz"
-      sha256 "2c07ffc454bdd6f73b493d0f9034591b41e570fdf8210e5334e0c167eaa5bcf2"
+      sha256 "1063e276487c4ec251fe9cf04ad6c37663f8bfeab5ba1e0e39ca05dcf93816af"
       define_method(:install) do
         bin.install "matcha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/floatpane/matcha/releases/download/v0.35.0/matcha_0.35.0_linux_arm64.tar.gz"
-      sha256 "a29435bc15660dcd8becf2b1536781f98ec9708d862124f1390323326bf6d910"
+      sha256 "d81e41ad0b2ddf86d46b8747f5100b38b1f2c9579a4fb1ef876046a924ba43d9"
       define_method(:install) do
         bin.install "matcha"
       end
