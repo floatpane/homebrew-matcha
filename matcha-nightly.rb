@@ -6,20 +6,20 @@ class MatchaNightly < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/floatpane/matcha/releases/download/nightlyv0/matcha_nightly_darwin_amd64.tar.gz"
-      sha256 "fb6bdb5c422a3ff0881bcc456bca4aaab06e940c74172d795f2a58c07a91f3b6"
+      sha256 "1f7dff1a457e38a75effc4f609d3598b718e16289f66dc553a84d0b5456ff843"
     else
       url "https://github.com/floatpane/matcha/releases/download/nightlyv0/matcha_nightly_darwin_arm64.tar.gz"
-      sha256 "3ea194c774c40d7c81462c580e16074f0425d8936c43adbbfefd833c968d0fd5"
+      sha256 "a2b71ae173a698a107b3ecdb8a1ed7413d0eb7b78f19cf215f7a316e75bf7f83"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/floatpane/matcha/releases/download/nightlyv0/matcha_nightly_linux_amd64.tar.gz"
-      sha256 "6b37eadc6f4408b9c6afa6810f7388cb66cf7692fa217c403236b8980be9de4a"
+      sha256 "0433c7f6f7bad875a2850e323298098ceb6af0f4fb1f0d41f0498ff74615bc79"
     else
       url "https://github.com/floatpane/matcha/releases/download/nightlyv0/matcha_nightly_linux_arm64.tar.gz"
-      sha256 "2fec49a14d241d67bc9378c0a85ce6bd41f0fbe0efcb71c9ccb90c2fd503e287"
+      sha256 "3f748725260f190e988ac7de3fd2b969bca70c59e38a4d15a7623c3300c1abc2"
     end
   end
 
