@@ -1,25 +1,25 @@
 class MatchaNightly < Formula
   desc "A beautiful and functional email client for your terminal (nightly)"
   homepage "https://matcha.email"
-  version "nightly-fabbb3a"
+  version "nightly-aab4bea"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/floatpane/matcha/releases/download/nightlyv0/matcha_nightly_darwin_amd64.tar.gz"
-      sha256 "9ab10414e60490541367dacca7151779ed303e68aee7055054ceb82a0be480d0"
+      sha256 "691ea4724a153904a79aaf505505816a5b5b24dbd2fa9282f652f0e4802f77a0"
     else
       url "https://github.com/floatpane/matcha/releases/download/nightlyv0/matcha_nightly_darwin_arm64.tar.gz"
-      sha256 "ab5f89de9dce9f75bfbc4ef23d55e11f3af188d7634018dc70ed2012484ae12a"
+      sha256 "8fbe68342dac4ecaf7a242743d6d4f278ccd6b50dafa848ea4cac1a382e2872d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/floatpane/matcha/releases/download/nightlyv0/matcha_nightly_linux_amd64.tar.gz"
-      sha256 "7fac32b48c5c170441ab3c2eebae8a58336d62aa38a13051756ab22739a9d282"
+      sha256 "34d7dd41636f8719be2e3dd6d5d84687a8e0b44f65712eec84ecc6683aa4353f"
     else
       url "https://github.com/floatpane/matcha/releases/download/nightlyv0/matcha_nightly_linux_arm64.tar.gz"
-      sha256 "17d693be66e6710c71e380e21734313977b1f03b9efb2ed3ebd5e5bb57ae6dff"
+      sha256 "240548e18ab6798368e8e8cbf9a81f59b547d0d9fb7fabbb08ac1fe43c8c3868"
     end
   end
 
